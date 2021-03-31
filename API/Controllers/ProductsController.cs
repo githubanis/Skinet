@@ -13,10 +13,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ProductsController : ControllerBase
+{    
+    public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productRepo;
         private readonly IGenericRepository<ProductBrand> _productBrandRepo;
